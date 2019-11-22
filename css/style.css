@@ -256,6 +256,7 @@ justify-content:center;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .specialize-container h3 {
@@ -272,6 +273,7 @@ justify-content:center;
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    margin-top: 30px;
 }
 
 .portfolio h4 {
@@ -312,6 +314,10 @@ justify-content:center;
     grid-gap: 1em;
     grid-template-columns: auto auto auto auto;
 }
+
+
+
+
 
 .brand-slider {
     width: 93%;
