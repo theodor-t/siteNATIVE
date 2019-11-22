@@ -84,6 +84,34 @@ nav {
     padding: 0 4px;
     color: #fff;
 }
+
+.lakub_derza_timan {
+    background-color: #1a4463;
+    -webkit-border-radius: 7px;
+    border-radius: 43px;
+    border: none;
+    color: #e4e2e2;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 4px 9px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 45%;
+    margin-bottom: 30px;
+}
+
+@keyframes glowing {
+  0% { background-color: #B22222; box-shadow: 0 0 2px #8B0000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 9px #FF0000; }
+  100% { background-color: #B22222; box-shadow: 0 0 2px #8B0000; }
+}
+
+.lakub_derza_timan {
+  animation: glowing 1500ms infinite;
+}
+
 .newss{
     background: url(../img/bgsection.jpg)no-repeat center center fixed;
 }
@@ -632,6 +660,10 @@ footer #social img {
         font-size: 20px;
         margin-bottom: 20px;
     }
+        .lakub_derza_timan {
+        margin-left: 35%;
+    }
+}
 }
 
 @media only screen and (max-width: 1000px) {
@@ -709,5 +741,8 @@ footer #social img {
     }
     .body{ 
         margin-top: -230px;
+    }
+    .lakub_derza_timan {
+        margin-left: 35%;
     }
 }
