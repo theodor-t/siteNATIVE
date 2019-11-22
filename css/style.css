@@ -85,7 +85,7 @@ nav {
     color: #fff;
 }
 .newss{
-        background: url(../img/bgsection.jpg)no-repeat center center fixed;
+    background: url(../img/bgsection.jpg)no-repeat center center fixed;
 }
 .body{ 
   background-color: rgba(0, 0, 0, 0.65);
@@ -706,5 +706,8 @@ footer #social img {
         display: grid;
         grid-template-columns: 100%;
         grid-column-gap: 3%;
+    }
+    .body{ 
+        margin-top: -230px;
     }
 }
