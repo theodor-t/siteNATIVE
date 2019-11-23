@@ -103,59 +103,81 @@ nav {
 }
 
 @keyframes glowing {
-  0% { background-color: #B22222; box-shadow: 0 0 2px #8B0000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 9px #FF0000; }
-  100% { background-color: #B22222; box-shadow: 0 0 2px #8B0000; }
+    0% {
+        background-color: #B22222;
+        box-shadow: 0 0 2px #8B0000;
+    }
+    50% {
+        background-color: #FF0000;
+        box-shadow: 0 0 9px #FF0000;
+    }
+    100% {
+        background-color: #B22222;
+        box-shadow: 0 0 2px #8B0000;
+    }
 }
 
 .lakub_derza_timan {
-  animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
 }
 
-.newss{
+.newss {
     background: url(../img/bgsection.jpg)no-repeat center center fixed;
 }
-.body{ 
-  background-color: rgba(0, 0, 0, 0.65);
-  font-weight: 100;
-  font-size: 1em;
-  color: white;
-  min-width: 375px;
-  padding:0 2% 20px 2%;
-  width: 76%;
-  margin-left: auto;
-  margin-right: auto;
-text-align: center;
-box-shadow: 1px 1px 50px #000;
-margin-bottom: 20px;
-  min-height:700px;
-}
-.news_block{
-  display:flex;
-  flex-flow: row wrap;
-justify-content:center;
-  align-items:center;
-}
-.news_right{width:58%;min-width:375px; margin:20px auto 0 auto;}
 
-.news_left{width:38%;min-width:375px;margin:0 auto 0 auto;text-align:justify;}
+.body {
+    background-color: rgba(0, 0, 0, 0.65);
+    font-weight: 100;
+    font-size: 1em;
+    color: white;
+    min-width: 375px;
+    padding: 0 2% 20px 2%;
+    width: 76%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 1px 1px 50px #000;
+    margin-bottom: 20px;
+    min-height: 700px;
+}
 
+.news_block {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.news_right {
+    width: 58%;
+    min-width: 375px;
+    margin: 20px auto 0 auto;
+}
+
+.news_left {
+    width: 38%;
+    min-width: 375px;
+    margin: 0 auto 0 auto;
+    text-align: justify;
+}
 
 .aspectratio16x9 {
-   position: relative;
-   width: 100%;
-   padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
 }
 
 .slideshow img {
     width: 100%;
-    
-   
 }
+
 .slideshow input[type="checkbox"],
 .slideshow input[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
 }
 
 .slideshow {
@@ -167,7 +189,9 @@ justify-content:center;
     overflow: hidden;
 }
 
+
 /* slideshow item */
+
 .slideshow--item {
     width: 100%;
     position: absolute;
@@ -175,7 +199,7 @@ justify-content:center;
     visibility: hidden;
 }
 
-.slideshow--bullet:checked + .slideshow--item {
+.slideshow--bullet:checked+.slideshow--item {
     visibility: visible;
 }
 
@@ -185,7 +209,7 @@ justify-content:center;
     transition: .3s ease-out opacity;
 }
 
-.slideshow[data-transition="fade"] .slideshow--bullet:checked + .slideshow--item {
+.slideshow[data-transition="fade"] .slideshow--bullet:checked+.slideshow--item {
     opacity: 1;
 }
 
@@ -196,13 +220,15 @@ justify-content:center;
     transition: .3s ease-out transform;
 }
 
-.slideshow[data-transition="zoom"] .slideshow--bullet:checked + .slideshow--item {
+.slideshow[data-transition="zoom"] .slideshow--bullet:checked+.slideshow--item {
     opacity: 1;
     transform: scale(1);
 }
 
+
 /* slideshow navigation */
-.slideshow--nav{
+
+.slideshow--nav {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -210,7 +236,7 @@ justify-content:center;
     display: none;
     z-index: 88;
     cursor: pointer;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -221,12 +247,12 @@ justify-content:center;
 
 .slideshow--nav:after {
     display: block;
-      background-image: url('https://cdn2.iconfinder.com/data/icons/picol-vector/32/arrow_sans_right-512.png');
+    background-image: url('https://cdn2.iconfinder.com/data/icons/picol-vector/32/arrow_sans_right-512.png');
     background-size: 60px 60px;
     display: inline-block;
-    width: 60px; 
+    width: 60px;
     height: 60px;
-    content:"";
+    content: "";
     font-size: 2em;
     color: #fff;
     position: absolute;
@@ -253,7 +279,9 @@ justify-content:center;
     display: block;
 }
 
+
 /* Radiobuttons to control the slideshow */
+
 .slideshow--bullet {
     font-size: .75em;
     width: 1em;
@@ -266,8 +294,7 @@ justify-content:center;
     appearance: none;
     background: #ccc;
     border-radius: 1em;
-    transition: .3s ease-out background,
-                .3s ease-out transform;
+    transition: .3s ease-out background, .3s ease-out transform;
 }
 
 .slideshow--bullet:checked {
@@ -277,7 +304,6 @@ justify-content:center;
     -moz-transform: scale(1.3);
     transform: scale(1.3);
 }
-
 
 .specialize-container {
     width: 100%;
@@ -342,10 +368,6 @@ justify-content:center;
     grid-gap: 1em;
     grid-template-columns: auto auto auto auto;
 }
-
-
-
-
 
 .brand-slider {
     width: 93%;
@@ -636,14 +658,6 @@ footer #social img {
     .specialize-container p {
         font-size: 16px;
     }
-    .specialize-cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .bottom-card {
-        width: 250px;
-    }
     .posts {
         width: 90%;
         display: grid;
@@ -660,10 +674,12 @@ footer #social img {
         font-size: 20px;
         margin-bottom: 20px;
     }
-        .lakub_derza_timan {
+    .lakub_derza_timan {
         margin-left: 35%;
     }
-}
+    .newss {
+        margin-top: 250px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -739,7 +755,7 @@ footer #social img {
         grid-template-columns: 100%;
         grid-column-gap: 3%;
     }
-    .body{ 
+    .body {
         margin-top: -230px;
     }
     .lakub_derza_timan {
