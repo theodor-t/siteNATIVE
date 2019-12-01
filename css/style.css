@@ -210,6 +210,114 @@ nav {
 .lakub_derza_timan {
     animation: glowing 1500ms infinite;
 }
+/*start global */
+
+#features {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#pricing .card-section {
+  margin-bottom: 50px;
+}
+
+.card_features {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-title-features {
+  margin: 10px 0;
+}
+
+.card-img {
+    width: 128px;
+}
+
+.card-tag {
+  color: tomato;
+  font-size: 1.5rem;
+  font-weight: bold;  
+}
+
+.card-price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+  
+#works {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#video {
+  width: 280px;
+  height: 157px;
+  margin: 20px 0;
+}
+
+#pricing {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#form {
+  margin: 10px;
+}
+
+input, select {
+  margin: 10px 0;
+}
+
+input[type=email], select {
+  width: 300px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+input[type=submit] {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  color: whitesmoke;
+  background-color: gray;
+  transition: background-color .5s;
+}
+
+input[type=submit]:hover {
+  background-color: teal;
+}
+
+
+@media all and (min-width: 480px){
+  
+
+  
+  h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 20px 0;
+  }
+  
+  .card-features {
+    margin: 20px;
+  }
+  
+  #video {
+    width: 560px;
+    height: 315px;
+    margin: 20px;
+  }
 
 .news_block {
     background: #f7f7f7;

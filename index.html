@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" type="text/css" href="css/form.css">
+   
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
@@ -68,28 +68,75 @@
                 </div>
             </div>
         </div>
-        <section class="news_block">
-            <h1>Erlax Machines</h1>
-            <div id="hr_line"></div>
 
-            <p>Арендуя автомобиль в Erlax Machines Вы наслаждаетесь: Широким выбором современных и качественных автомобилей ведущих мировых марок. Неважно, для какой цели Вам необходима машина напрокат, мы предложим Вам вариант, на 100 % удовлетворяющий Вашим потребностям! В парке автомобилей Erlax Machines представлены как автомобили эконом-класса, так и полноприводные внедорожники и седаны премиум-класса.</p>
-            <h2>Услуги:</h2>
-            <p>-Детское кресло в аренду
-                <br> -Аренда автомобиля с водителем
-                <br> -Бесплатная доставка авто
-                <br> -Встречаем гостей в аэропорту
-                <br> -Предлагаем gps навигатор и видео регистратор</p>
-            <h2>Условия аренды:</h2>
-            <p>Условия аренды, проката автомобилей:
-                <br> - минимальный возраст арендатора: 18 года
-                <br> - опыт вождения не менее трех месяцев
-                <br> - депозит
-                <br> - необходимо удостоверение личности
-                <br> - необходимо водительские права
-                <br>
-            </p>
-
-        </section>
+ <section id="features">
+    <h2>Erlax Machines</h2>
+    <div class="card-section">
+      <div class="card_features">
+        <h3 class="card-title-features">Почему именно мы?</h3>
+        <img class="card-img" src="img/about-1.png" alt="">
+        <p class="card-description">Арендуя автомобиль в Erlax Machines Вы наслаждаетесь: Широким выбором современных и качественных автомобилей ведущих мировых марок. Неважно, для какой цели Вам необходима машина напрокат, мы предложим Вам вариант, на 100 % удовлетворяющий Вашим потребностям!</p>
+      </div>
+      <div class="card_features">
+        <h3 class="card-title-features">Услуги:</h3>
+        <img class="card-img" src="img/about-2.png" alt="">
+        <p class="card-description">-Детское кресло в аренду <br>
+-Аренда автомобиля с водителем<br>
+-Бесплатная доставка авто<br>
+-Встречаем гостей в аэропорту<br>
+-Предлагаем gps навигатор и видео регистратор</p>
+      </div>
+      <div class="card_features">
+        <h3 class="card-title-features">Условия аренды:</h3>
+        <img class="card-img" src="img/about-3.png" alt="">
+        <p class="card-description">- Минимальный возраст : 18 лет<br>
+- Опыт вождения не менее 3-х месяцев<br>
+- Депозит<br>
+- Необходимо удостоверение личности<br>
+- Необходимо водительские права</p>
+      </div>
+    </div>
+  </section><!-- features -->
+  
+  <section id="works">
+    <h2>Как это работает?</h2>
+    <iframe id="video" src="https://www.youtube.com/embed/uVPoGMu3LQo" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+  </section><!-- works -->
+  
+  <section id="pricing">
+    <h2>Прайс -Лист</h2>
+    <div class="card-section">
+      <div class="card_features">
+        <img class="card-img" src="img/econom.png" alt="">
+        <h3 class="card-tag">Эконом</h3>
+        <p class="card-price">От 20$</p>
+      </div>
+      <div class="card_features">
+        <img class="card-img" src="img/standart.png" alt="">
+        <h3 class="card-tag">Стандарт</h3>
+        <p class="card-price">От 40$</p>
+      </div>
+      <div class="card_features">
+        
+        <img class="card-img" src="img/premium.png" alt="">
+        <h3 class="card-tag">Премиум</h3>
+        <p class="card-price">от 59$</p>
+      </div>
+    </div>
+    <h2>Оформить заказ</h2>
+    <h4>Вы можете нам написать на почту или позвонить: 0699-17-8-17</h4>
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" placeholder="Введите свой Email" required><br>
+      <label for="product">Выберите класс автомобиля</label><br>
+      <select name="product" required>
+        <option value="product1">Эконом</option>
+        <option value="product2">Стандарт</option>
+        <option value="product3">Премиум</option>
+      </select><br>
+      <input type="submit" id="submit">
+    </form>
+  </section><!-- pricing -->
 
         
     </main>
@@ -132,16 +179,6 @@
         </div>
     </footer>
     <div id="top"><img src="img/up.png" alt=""></div>
-    <div class="popup">
-        <div id="close">x</div>
-        <form method="post">
-            <input name="name" placeholder="Как вас зовут?" class="name" required />
-            <input name="emailaddress" placeholder="Какой у вас номер?" class="email" type="text" required />
-            <textarea rows="4" cols="50" name="subject" placeholder="Введите ваше сообщение" class="message" required></textarea>
-            <input name="submit" class="btn" type="submit" value="Отправить" />
-        </form>
-    </div>
-    <div class="shadow"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/form.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
