@@ -38,7 +38,7 @@ header {
 
 .header-container a {
     color: #000;
-    font-size: 16px;
+    font-size: 30px;
     margin-right: 63px;
     padding: 26px 6px;
 }
@@ -60,7 +60,8 @@ nav {
 }
 
 .top-slide {
-    background: url(../img/slider_bg.jpg) no-repeat;
+    background: url(../img/slider_bg.jpg) ;
+    background-size: cover;
     padding-top: 120px;
     padding-bottom: 280px;
 }
@@ -787,6 +788,7 @@ footer #social img {
     .toggle-button:after {
         content: attr(data-open);
         display: block;
+        font-size: 25px;
     }
     #menu-checkbox:checked+nav[role="navigation"] .main-menu {
         display: block;
@@ -895,6 +897,7 @@ footer #social img {
     .toggle-button:after {
         content: attr(data-open);
         display: block;
+        font-size: 33px;
     }
     #menu-checkbox:checked+nav[role="navigation"] .main-menu {
         display: block;
